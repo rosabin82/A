@@ -16,10 +16,10 @@ public class Client {
 			BufferedReader in = null; // Server로부터 데이터를 읽어들이기 위한 입력스트림
 			BufferedReader in2 = null; // 키보드로부터 읽어들이기 위한 입력스트림
 			PrintWriter out = null; // 서버로 내보내기 위한 출력 스트림
-			InetAddress ia = null; //IP주소를 표현한 클래스
+			InetAddress ia = null; 
 			
 			try {
-				ia = InetAddress.getLocalHost(); // 서버로 접속하기 위해 서버 주소 입력
+				ia = InetAddress.getLocalHost(); //InetAddress IP주소를 표현한 클래스 // 서버로 접속하기 위해 서버 주소 입력
 				
 				socket = new Socket(ia, 1395); //컴퓨터 한대로 통신하기에 ia에 getLocalHost()써서 local ip 불러옴
 				in = new BufferedReader(new InputStreamReader(socket.getInputStream())); // BufferedReader 선언
