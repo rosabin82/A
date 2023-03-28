@@ -21,7 +21,7 @@ public class Client {
 			try {
 				ia = InetAddress.getLocalHost(); // 서버로 접속하기 위해 서버 주소 입력
 				
-				socket = new Socket(ia, 1395); //컴퓨터 한대로 통신하기에 getLocalHost()
+				socket = new Socket(ia, 1395); //컴퓨터 한대로 통신하기에 ia에 getLocalHost()써서 local ip 불러옴
 				in = new BufferedReader(new InputStreamReader(socket.getInputStream())); // BufferedReader 선언
 				in2 = new BufferedReader(new InputStreamReader(System.in)); // BufferredReader2 선언
 				out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()))); // 이하 동문
