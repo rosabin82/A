@@ -16,7 +16,7 @@ public class Client {
 			BufferedReader in = null; // Server로부터 데이터를 읽어들이기 위한 입력스트림
 			BufferedReader in2 = null; // 키보드로부터 읽어들이기 위한 입력스트림
 			PrintWriter out = null; // 서버로 내보내기 위한 출력 스트림
-			InetAddress ia = null;
+			InetAddress ia = null; //IP주소를 표현한 클래스
 			
 			try {
 				ia = InetAddress.getLocalHost(); // 서버로 접속하기 위해 서버 주소 입력
