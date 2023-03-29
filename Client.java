@@ -34,7 +34,7 @@ public class Client {
 			
 			try {
 				System.out.print("서버로 보낼 매세지 : ");
-				String data = in2.readLine(); // 키보드로부터 입력 //readLine()  입력값으로 들어온 데이터를 한 줄로 읽어서 String으로 바꾸는 메
+				String data = in2.readLine(); // 키보드로부터 입력 //readLine()  입력값으로 들어온 데이터를 한 줄로 읽어서 String으로 바꾸는 메서드
 				out.println(data);
 				out.flush(); //버퍼에 잔류하는 모든 바이트를 출력
 				
