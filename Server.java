@@ -36,7 +36,7 @@ public class Server {
 			
 			System.out.println("Client로부터 온 메세지 : " + str);
 			
-			out.write(str); // print(str)와 비슷
+			out.write(str); // print(str)와 비슷// 문자 단위 입출력을 위한
 			out.flush(); // 버퍼링으로 인해 기록되지 않은 데이터를 출력 스트림에 모두 출력
 			socket.close(); // 출력되지 않은 스트림은 모두 출력하고 스트림을 닫는다. 
 		}catch(IOException e) {
