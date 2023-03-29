@@ -25,6 +25,7 @@ public class Client {
 				in = new BufferedReader(new InputStreamReader(socket.getInputStream())); // BufferedReader 선언
 				in2 = new BufferedReader(new InputStreamReader(System.in)); // BufferredReader2 선언
 				out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()))); // 이하 동문
+				//InputStream / OutputStream	바이트 단위 입출력을 위한 최상위 입출력 스트림 클래스
 				//InputStreamReade/OutputStreamWriter/PrinterWriter/BufferedReader/BufferedWriter 바이트 단위 입출력을 위한 하위 입출력 스트림 클래스
 				System.out.println(socket.toString());
 			}catch(IOException e) {
